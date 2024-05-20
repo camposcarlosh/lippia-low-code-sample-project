@@ -68,7 +68,7 @@ Feature: Low Code Clockify
   @GetClientWorkspace2
   Scenario: Get all client from a Workspaces with CALL
     #caso anterior como pre condición
-    Given call Clase13.feature@GetWorkspace
+    Given call Workspace.feature@GetWorkspace
     #condiciones del caso actual
     #Nombre del feature @ tag del escenario a llamar
     And base url $(env.base_url)
@@ -81,7 +81,7 @@ Feature: Low Code Clockify
 
   @AddClientWorkspace
   Scenario: Add client from a Workspaces
-    Given call Clase13.feature@GetWorkspace
+    Given call Workspace.feature@GetWorkspace
     And base url $(env.base_url)
     And endpoint /v1/workspaces/{{espacioDeTrabajo}}/clients/
     #And header x-api-key = $(env.x-api-key)
@@ -91,9 +91,9 @@ Feature: Low Code Clockify
     When execute method POST
     Then the status code should be 201
 
-  @DeleteClientWorkspace @Do
+  @DeleteClientWorkspace
   Scenario: Delete client from a Workspaces
-    Given call Clase13.feature@GetClientWorkspace2
+    Given call Workspace.feature@GetClientWorkspace2
     And base url $(env.base_url)
     And endpoint /v1/workspaces/{{espacioDeTrabajo}}/clients/{{idCliente}}
     #And header x-api-key = $(env.x-api-key)
