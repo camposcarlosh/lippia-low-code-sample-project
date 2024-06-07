@@ -1,35 +1,22 @@
-# Changelog
-All notable changes to this project will be documented in this file.
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>io.lippia</groupId>
+        <artifactId>root</artifactId>
+        <version>3.3.0.2</version>
+    </parent>
 
-## 1.0 @_Unreleased_
+    <groupId>com.Crowdar</groupId>
+    <artifactId>lippia-low-code-sample-project</artifactId>
+    <name>low-code-automation</name>
+    <packaging>jar</packaging>
+    <url>http://maven.apache.org</url>
 
-### Added   
-* [Core] Global Variables & Properties
-* [Core] URLs Support
-* [Core] Query Parameters Support
-* [Core] Endpoints Support
-* [Core] Headers Support
-  * Key-value pairs
-  * Source read, includes:
-    * [_X_] JSON file (no soporta variables)
-    * [_X_] XML file (no soporta variables)
-* [Core] HTTP Method Support
-* [Core] Assertions Support
-  * Key-value pairs
-* [Core] Schema Validations Support
-  * Key-value pairs
-  * JSON Schema
-  * [_X_] XML Schema (to be defined)
-* [Core] Call Scenarios
-  * [_X_] Feature execution by default
-  * Filters:
-      * Tag -> name.feature@tag o @~tag para excluir
-      * Name -> name.feature$scenarioName o $~scenarioName para excluir
-      * Line -> name.feature:line o :~line para excluir
-  * [_X_] Ejecutar por defecto un feature entero
-
-### Updated
-* _X_
-
-### Fixed
-* _X_
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <base.api.url>https://rickandmortyapi.com/api</base.api.url>
+        <cucumber.stepsDefinitions>--glue io/lippia/api/lowcode/steps --glue ar/steps</cucumber.stepsDefinitions>
+        <cucumber.hooks>-

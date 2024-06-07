@@ -325,44 +325,9 @@ environments {
 │   │     │   └── jsons
 │   │               └── ...
 │   │               └── ...
-│   │               └── ...
-│   │               └── ...
-│   │               └── schemas
-|
-│        
-```
-
-#### You can create a schema file with ".json" extension at the directory mentioned above (jsons/schemas folder).
-
-### For example
-
-| Version 3.3.0.0                         | Version 3.3.0.1 or newer                          |
-|:----------------------------------------|:--------------------------------------------------|
-| And validate schema character.json      | And validate schema jsons/schemas/character.json  |
-
-## <a id="title_step_glosary"></a>Steps Glossary
-
-| ENGLISH                                                              | SPANISH                                                                 |
-|:---------------------------------------------------------------------|:------------------------------------------------------------------------|
-| add query parameter '\<any>' = \<any>                                | agregar parametro a la query '\<any>' = \<any>                          |
-| base url \S+                                                         | base url \S+                                                            |
-| body \S+                                                             | body \S+                                                                |
-| call \S+.feature[@:\$]\S+                                            | invocar \S+.feature[@:\$]\S+                                            |
-| create connection database '\<any>'                                  | crear conexion a la base de datos '\<any>'                              |
-| define [^\d]\S+ = \S+                                                | definir  [^\d]\S+ = \S+                                                 |
-| delete keyValue \<any> in body \<any>                                | eliminar clave \<any> en el  body \<any>                                |
-| endpoint \S+                                                         | endpoint \S+                                                            |
-| execute method GET l POST l PUT l PATCH l DELETE                     | ejecutar metodo GET l POST l PUT l PATCH l DELETE                       |
-| execute query '\<any>'                                               | ejecutar query '\<any>'                                                 |
-| header \S+ = \S+                                                     | header \S+ = \S+                                                        |
-| And I save from result JSON the attribute <any> on variable <any>    | guardo del resultado JSON el atributo <any> en la variable \<any>       |
-| param \S+ = \S+                                                      | param \S+ = \S+                                                         |
-| response should be [^\s].+ = [^\s].*                                 | la respuesta debe ser [^\s].+ = [^\s].*                                 |
-| response should be [^\s].+ contains [^\s].*                          | la respuesta debe ser [^\s].+ contiene [^\s].*                          |
-| set value \<any> of key \<any> in body \<any>                        | setear el valor \<any> de la clave \<any> en el body \<any>             |
-| the status code should be \<number>                                  | el status code debe ser \<number>                                       |
-| validate field '\<any>' = \<any>                                     | validar el campo '\<any>' = \<any>                                      |
-| validate schema \<string>                                            | validar schema \<string>                                                |
-| verify the response ([^\\s].+) '(equals &#124; contains)' ([^\\s].*) | verificar la respuesta ([^\\s].+) '(equals &#124; contains)' ([^\\s].*) |
-
-
+│   │          20/05/24 23:30:59 INFO  BasicHook:20 - ------ Starting -----Delete project-----
+20/05/24 23:30:59 INFO  BasicHook:20 - ------ Starting -----Update project to deactivate-----
+20/05/24 23:30:59 INFO  BasicHook:20 - ------ Starting -----Find project by id-----
+20/05/24 23:31:00 INFO  BasicHook:20 - ------ Starting -----Add a new project-----
+20/05/24 23:31:00 INFO  BasicHook:20 - ------ Starting -----Get all my Workspaces-----
+20/05/24 23:31:02 INFO  RestClient:163 - >>>Response: <200,[{"id":"6617122bc1fa070824829969","name":"CarlosWS","hourlyRate":{"amount":0,"currency":"USD"},"costRate":{"amount":0,"currency":"USD"},"memberships":[{"userId":"6617082e2e27e9007ad5cf9a","hourlyRate":null,"costRate":null,"targetId":"6617122bc1fa070824829969","membershipType":"WORKSPACE","membershipStatus":"ACTIVE"}],"workspaceSettings":{"timeRoundingInReports":false,"onlyAdminsSeeBillableRates":true,"onlyAdminsCreateProject":true,"onlyAdminsSeeDashboard":false,"defaultBillableProjects":true,"lockTimeEntries":null,"lockTimeZone":null,"round":{"round":"Round to nearest","minutes":"15"},"projectFavorites":true,"canSeeTimeSheet":false,"canSeeTracker":true,"projectPickerSpecialFilter":false,"forceProjects":false,"forceTasks":false,"forceTags":false,"forceDescription":false,"onlyAdminsSeeAllTimeEntries":false,"onlyAdminsSeePublicProjectsEntries":false,"trackTimeDownToSecond":true,"projectGroupingLabel":"client","adminOnlyPages":[],"automaticLock":null,"onlyAdminsCreateTag":false,"onlyAdminsCreateTask":false,"timeTrackingMode":"DEFAULT","multiFactorEnabled":false,"numberFormat":"PERIOD_COMMA","currencyFormat":"VALUE_SPACE_CURRENCY","decimalFormat":false,"isProjectPublicByDefault":true},"imageUrl":"","featureSubscriptionType":"FREE","features":["TIME_TRACKING","KIOSK"],"currencies":[{"id":"6617122bc1fa07082482996a","code":"USD","isDefault":true}],"subdomain":{"name":null,"enabled":false}},{"id":"661dc8ae027e1d69c1b675da","name":"@Carlos'S WorkspaceWS_2024-05-08 21:21","hourlyRate":{"amount":0,"currency":"USD"},"costRate":{"amount":0,"currency":"USD"},"memberships":[{"userId":"6617082e2e27e9007ad5cf9a","hourlyRate":null,"costRate":null,"targetId":"661dc8ae027e1d69c1b675da","membershipType":"WORKSPACE","membershipStatus":"ACTIVE"}],"workspaceSettings":{"timeRoundingInReports":false,"onlyAdminsSeeBillableRates":true,"onlyAdminsCreateProject":true,"onlyAdminsSeeDashboard":false,"defaultBillableProjects":true,"lockTimeEntries":null,"lockTimeZone":null,"round":{"round":"Round to nearest","minutes":"15"},"projectFavorites":true,"canSeeTimeSheet":false,"canSeeTracker":true,"projectPickerSpecialFilter":false,"forceProjects":false,"forceTasks":false,"forceTags":false,"forceDescription":false,"onlyAdminsSeeAllTimeEntries":false,"onlyAdminsSeePublicProjectsEntries":false,"trackTimeDownToSecond":true,"projectGroupingLabel":"client","adminOnlyPages":[],"automaticLock":null,"onlyAdminsCreateTag":false,"onlyAdminsCreateTask":false,"timeTrackingMode":"DEFAULT","multiFactorEnabled":false,"numberFormat":"PERIOD_COMMA","currencyFormat":"VALUE_SPACE_CURRENCY","decimalFormat":false,"isProjectPublicByDefault":true},"imageUrl":"","featureSubscriptionType":"FREE","features":["TIME_TRACKING","KIOSK"],"currencies":[{"id":"661dc8ae027e1d69c1b675db","code":"USD","isDefault":true}],"subdomain":{"name":null,"enabled":false}},{"id":"663bc501e45cba747197c869","name":"WS_2024-05-08 15:31","hourlyRate":{"amount":0,"currency":"USD"},"costRate":{"amount":0,"currency":"USD"},"memberships":[{"userId":"6617082e2e27e9007ad5cf9a","hourlyRate":null,"costRate":null,"targetId":"663bc501e45cba747197c869","membershipType":"WORKSPACE","membershipStatus":"ACTIVE"}],"workspaceSettings":{"timeRoundingInReports":false,"onlyAdminsSeeBillableRates":true,"onlyAdminsCreateProject":true,"onlyAdminsSeeDashboard":false,"defaultBillableProjects":true,"lockTimeEntries":null,"lockTimeZone":nul
